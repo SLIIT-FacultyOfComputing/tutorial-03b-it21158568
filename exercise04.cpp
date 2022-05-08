@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-void print(int len, int wth);
-void input(int len, int wth);
+void print(int len, int wth);//declare function
+void input(int &len, int &wth);//declare function
 
 // Do not change the main() function
 int main() {
@@ -19,3 +19,8 @@ void print(int len, int wth) {
 }
 
 // Implement the Input Function here
+void input(int &len, int &wth)
+{
+  cin >> len;
+  cin >> wth;
+}
